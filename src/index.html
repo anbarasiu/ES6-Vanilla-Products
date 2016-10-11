@@ -1,21 +1,50 @@
 <!DOCTYPE HTML>
 <head>
   <title>Can we build it?</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
   <article>
     <section class = "actions-bar">
-        <div id = "sort">
-            Sort
+        <div id = "sort" class = "action-bar-item">
+            <input type = "checkbox" id = "action-sort" />
+            <label for = "action-sort">
+              Sort
+            </label>
+            <ul class = "dialog">
+            </ul>
+            <input type = "button" value = "Filter" id = "sort" />
         </div>
-        <div id = "filter">
-            Filter
+        <div class = "action-bar-item">
+            <input type = "checkbox" id = "action-filter" />
+            <label for = "action-filter">
+              Filter
+            </label>
+            <ul class = "dialog">
+              <li>
+                <input id = "filter-item-1" type="checkbox" name="filter" value = "Jeans"/>
+                <label for = "filter-item-1">Jeans</label>
+              </li>
+              <li>
+                <input id = "filter-item-2" type="checkbox" name="filter" value = "Sarees" />
+                <label for = "filter-item-2">Sarees</label>
+              </li>
+              <li>
+                <input id = "filter-item-3" type="checkbox" name="filter" value = "Tops" />
+                <label for = "filter-item-3">Tops</label>
+              </li>
+              <li>
+                <input id = "filter-item-4" type="checkbox" name="filter" value = "Pants" />
+                <label for = "filter-item-4">Pants</label>
+              </li>
+            </ul>
+            <input type = "button" value = "Filter" id = "filter" />
         </div>
     </section>
     <section class = "products">
 
     </section>
   </article>
-  <script type = "text/javascript" src = "bundle.js" />
+  <script type = "text/javascript" src = "bundle.js" ></script>
 </body>
 </html>
