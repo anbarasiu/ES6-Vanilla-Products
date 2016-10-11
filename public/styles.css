@@ -1,0 +1,43 @@
+.products {
+    width: 100%;
+}
+.item {
+    width: 30%;
+    display: inline-block;
+    margin: 1%;
+    border: solid 1px gray;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+.actions-bar {
+    width: 100%;
+    background: gray;
+    height:40px;
+}
+.action-bar-item{
+  float:right;
+  padding: 10px;
+  position: relative;
+  margin-right: 100px;
+}
+.dialog{
+  display: none;
+  position: absolute;
+  width: 100px;
+  background: gray;
+  border: solid 1px black;
+  border-radius: 5px;
+  margin-top: 10px;
+  left: 0;
+}
+.action-bar-item input[type="checkbox"]:checked ~ .dialog{
+  display : block;
+}
+ul{
+  list-style: none;
+  padding: 10px;
+}
+ul li{
+  padding: 10px 0;
+}

@@ -1,0 +1,11 @@
+.products {
+    width: 100%;
+}
+.item {
+    width: 30%;
+    display: inline-block;
+    margin: 1%;
+    border: solid 1px gray;
+    padding: 5px;
+    border-radius: 5px;
+}
